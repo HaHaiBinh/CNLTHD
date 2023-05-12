@@ -108,7 +108,7 @@ export default function Users() {
       },
     },
   ];
-  const data = danhSachNguoiDung;
+  const data = Array.isArray(danhSachNguoiDung)?danhSachNguoiDung:[];;
 
   const onChange = (pagination, filters, sorter, extra) => {
     console.log("params", pagination, filters, sorter, extra);
